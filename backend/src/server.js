@@ -17,7 +17,7 @@ app.use(express.json());
 db.connect();
 const database = mongoose.connection;
 
-// app.use('/', routes);
+app.use('/', routes);
 // define routes
 app.get("/api", (req, res) => {
     // send the request back to the client
